@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    background-color: #1b202d;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 450px;
+    display: grid;
+    place-items: center;
+    padding: 30px 0px 0px 0px;
+    border-radius: 12px;
+    color: #1b202d;
+    box-shadow: 0 24px 32px -16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 520px) {
+    .container {
+        width: 350px;
+    }
+}
+
+@media (max-width: 370px) {
+    .container {
+        width: 300px;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.title {
+    padding-bottom: 25px;
+}
+
+.peopleQtd {
+    display: grid;
+    place-items: center;
+}
+
+.peopleQtd label {
+    padding-bottom: 10px;
+}
+
+.timeSet {
+    display: grid;
+    place-items: center;
+}
+
+.scheduleList {
+    padding-bottom: 25px;
+}
+
+li {
+    padding: 5px 0px;
+}
+
+input {
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    width: 80px;
+    height: 22px;
+    text-align: center;
+
+}
+
+.button {
+    border: 0;
+    background-color: #e0fe03;
+    padding: 8px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0px 10px 0px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color .3s;
+    color: #1b202d;
+}
+
+.button:active {
+    background-color: #a3d900;
+}
+
+.button-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.timeSet label {
+    padding-bottom: 10px;
+}
+
+.timeSet input {
+    color: #1b202d;
+}

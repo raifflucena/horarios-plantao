@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários Plantão</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Horários Plantão</h1>
+        </div>
+
+        <div class="peopleQtd">
+            <label for="peopleQtd">Quantidade de plantonistas:</label>
+            <input type="number" name="peopleQtd" id="peopleQtd"><br><br>
+        </div>
+        
+        <div class="timeSet">
+            <label for="startTime">Horário de início:</label>
+            <input type="time" name="startTime" id="startTime"><br>
+    
+            <label for="endTime">Horário de término:</label>
+            <input type="time" name="endTime" id="endTime"><br><br>
+        </div>
+
+        <div class="button-container">
+            <button type="button" id="scheduleRenderBtn" class="button">Gerar Horários</button><br>
+            <button type="button" id="clearBtn" class="button">Limpar</button><br>
+        </div>
+
+        <div class="scheduleList">
+            <ul id="scheduleList"></ul>
+        </div>
+    </div>  
+</body>
+</html>
